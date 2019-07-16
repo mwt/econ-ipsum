@@ -1,0 +1,32 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col one-half">
+      <h2 class="footer-heading">Created By</h2>
+        <ul class="contact-list">
+          {% for author in site.authors %}
+          <li class="p-name">
+            {%- if author.name -%}
+              <a class="u-name"{%- if author.domain -%} href="{{ author.domain }}"{%- endif -%}>{{ author.name | escape }}</a>
+            {%- endif -%}
+            {%- if author.email -%}
+              <a href="mailto:{{ author.email }}" title="{{ author.email }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#mail' | relative_url }}"></use></svg></a>
+            {%- endif -%}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="footer-col one-half">
+        <p>{{- site.description | escape -}}</p>
+        Number of paragraphs: <input type="number" id="np" class="nimput" name="np" value="5" min="0" max="100">
+        <button type="submit" id="generate" class="btn">Generate</button>
+      </div>
+    </div>
+
+  </div>
+
+</footer>

@@ -1,0 +1,60 @@
+title: Econ Ipsum
+authors: 
+  - matthew:
+    name: Matthew Thomas
+    domain: https://mwt.me
+  - maria:
+    name: Maria Fernanda Petri Betto
+    domain: https://mfpb.me
+description: > # this means to ignore newlines until "show_excerpts:"
+  A Lorem Ipsum generator that uses words from the abstracts of various economic papers.
+
+# show_excerpts: false # set to true to show excerpts on the homepage
+
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+  # generate social links in footer
+#  social_links:
+    # twitter: jekyllrb
+    # github:  jekyll
+    # rss: rss
+    # dribbble: jekyll
+    # facebook: jekyll
+    # flickr:   jekyll
+    # instagram: jekyll
+    # linkedin: jekyll
+    # pinterest: jekyll
+    # youtube: jekyll
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
+
+plugins:
+ - jekyll-sitemap
+ - jekyll-seo-tag
+
+compress_html:
+    ignore:
+        envs:
+        - development
+        - stage
+
+sass:
+    style: compressed
