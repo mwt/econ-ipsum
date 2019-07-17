@@ -5,12 +5,12 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col one-half authors">
-      <h2 class="footer-heading">Created By</h2>
+      <h2 class="footer-heading">Created by</h2>
         <ul class="contact-list">
           {% for author in site.authors %}
           <li class="p-name">
             {%- if author.name -%}
-              <a class="u-name"{%- if author.domain -%} href="{{ author.domain }}"{%- endif -%}>{{ author.name | escape }}</a>
+              <a class="u-name" href="{{ author.domain }}">{{ author.name | escape }}</a>
             {%- endif -%}
             {%- if author.email -%}
               <a href="mailto:{{ author.email }}" title="{{ author.email }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#mail' | relative_url }}"></use></svg></a>

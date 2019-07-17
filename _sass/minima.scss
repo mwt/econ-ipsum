@@ -3,6 +3,7 @@
 // Import font
 @font-face {
 	font-family: 'Computer Modern Serif';
+	font-display: swap;
 	src: url('/assets/font/cmunrm.eot');
 	src: url('/assets/font/cmunrm.eot?#iefix') format('embedded-opentype'),
 		 url('/assets/font/cmunrm.woff') format('woff'),
@@ -14,7 +15,7 @@
 
 // Define defaults for each variable.
 
-$base-font-family: 'Computer Modern Serif', 'Times New Roman', Serif;
+$base-font-family: 'Computer Modern Serif', 'Times New Roman', Times, serif;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -63,6 +64,5 @@ $on-large:         $on-laptop !default;
 // Import partials.
 @import
   "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting"
+  "minima/layout"
 ;
