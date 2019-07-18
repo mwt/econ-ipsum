@@ -1,3 +1,9 @@
+/* Make warmup request */
+var xmlHttp = new XMLHttpRequest();
+xmlHttp.open("GET", "https://econ-ipsum.appspot.com/warmup/", true);
+xmlHttp.send(null);
+
+/* Function makes request and puts data in post-content div */
 function xhr() {
   var tags = document.getElementsByClassName("post-content");
   var clone = tags[0].cloneNode(false);
@@ -17,7 +23,7 @@ function xhr() {
   return;
 };
 
-
+/* Event listener */
 document.getElementById("generate").addEventListener('click', function(e) {
   e.preventDefault();
   xhr();
