@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Econ Ipsum is an Economics-themed Lorem Ipsum generator. It was built in Python using a dictionary of words and terms contained in the abstracts of all Econometrica papers since 1933. The generator shuffles the sentences from these abstracts while preserving word order.
+Econ Ipsum is an Economics-themed Lorem Ipsum generator. It was built in Python using a dictionary of words and terms contained in the abstracts of all papers published in Econometrica from 1933 to 2019. The generator shuffles the sentences from these abstracts while preserving word order.
 
 The project was created by:
 <ul>
@@ -19,3 +19,5 @@ The project was created by:
 </li>
 {% endfor %}
 </ul>
+
+The front-end of this project is hosted on [GitHub Pages](https://pages.github.com/) while the backend is hosted via [AWS Lambda](https://aws.amazon.com/lambda/). We would like to thank both for enabling this project to exist at no cost.
