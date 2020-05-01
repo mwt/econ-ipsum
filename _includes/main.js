@@ -7,7 +7,7 @@ function xhr(post) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
-      pcache.push(...xhttp.responseText.split("\n"))
+      pcache.push(...xhttp.responseText.split("\n"));
       if (typeof post !== "undefined") {
         post();
       }
