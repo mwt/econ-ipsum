@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<article class="article">
+  {%- if page.title -%}
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+  {%- endif -%}
+
+  <div class="article-authors">
+    {% for author in site.authors %}
+    {%- if author.name -%}
+    <a class="u-name" href="{{ author.domain }}">{{ author.name | escape }}</a>
+    {%- endif -%}
+    {%- if author.email -%}
+    <a href="mailto:{{ author.email }}" title="{{ author.email }}"><svg class="svg-icon">
+        <use xlink:href="{{ '/assets/minima-social-icons.svg#mail' | relative_url }}"></use>
+      </svg></a>
+    {%- endif -%}
+    {% if forloop.last == false %}, {% endif %}
+    {% endfor %}
+  </div>
+  {%- if page.state -%}
+  <span class="article-state">{{ page.state }}</span>
+  {%- endif -%}
+  {%- if page.cites -%}
+  <div class="article-state">Citations: {{ page.cites }}</div>
+  {%- endif -%}
+  <hr class="article-divider">
+  {%- if page.abstract -%}
+  <h2 id="abstract">Abstract</h2>
+  {%- endif -%}
+  <div class="post-content">
+    {%- if page.abstract -%}
+    <blockquote class="abstract">
+      <p>{{ page.abstract }}</p>
+    </blockquote>
+    {%- endif -%}
+    {{ content }}
+  </div>
+
+</article>

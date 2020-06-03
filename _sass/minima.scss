@@ -18,19 +18,27 @@
 $base-font-family: 'Computer Modern Serif', 'Times New Roman', Times, serif;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
+$title-font-size:  $base-font-size * 1.5 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
+
+$sans-font-family: Arial, Helvetica, sans-serif;
 
 $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
 $background-color: #fdfdfd !default;
-$brand-color:      #2a7ae2 !default;
+
+$site-title-color: $text-color !default;
+
+$brand-color:       #2a7ae2 !default;
+$brand-color-light: lighten($brand-color, 40%) !default;
+$brand-color-dark:  darken($brand-color, 25%) !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
-$orange-color:     #f66a0a !default;
+
 $table-text-align: left !default;
 
 // Width of the content area
@@ -52,17 +60,18 @@ $on-large:         $on-laptop !default;
 // Notice the following mixin uses max-width, in a deprecated, desktop-first
 // approach, whereas media queries used elsewhere now use min-width.
 @mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
+	@media screen and (max-width: $device) {
+		@content;
+	}
 }
-
+  
 @mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
+	font-size: #{$ratio}rem;
 }
 
 // Import partials.
 @import
-  "minima/base",
-  "minima/layout"
+  "minima/base",             // Defines element resets.
+  "minima/layout",           // Defines structure and style based on CSS selectors.
+  "minima/custom-styles"     // Hook to override existing styles.
 ;

@@ -1,0 +1,110 @@
+/**
+ * Article
+ */
+
+.article {
+    .post-header {
+        margin-bottom: 0px;
+    }
+    
+    .post-title,
+    .post-content h1 {
+      @include relative-font-size(2);
+      letter-spacing: -1px;
+      line-height: 1.15;
+    
+      @media screen and (min-width: $on-large) {
+        @include relative-font-size(2);
+      }
+    }
+    
+    .article-authors {
+        font: {
+            size: $small-font-size;
+            family: $sans-font-family;
+        } 
+        margin-bottom: 8px;
+    }
+    
+    hr.article-divider {
+        border: {
+            color: $grey-color-light;
+            style: solid;
+            width: 1px;
+        }
+        margin: {
+            top: 10px;
+            bottom: 24px;
+        }
+    }
+
+    .article-state {
+        color: $grey-color;
+        font: {
+            size: $small-font-size;
+            family: $sans-font-family;
+        } 
+    }
+}
+
+blockquote.abstract {
+    color: $text-color;
+    font-style: normal;
+}
+
+/**
+ * Site footer
+ */
+
+.site-footer {
+    font-family: $sans-font-family;
+    border-top: 1px solid $grey-color-light;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    background: inherit;
+}
+
+.footer-col-wrapper {
+    color: $grey-color;
+    margin-left: -$spacing-unit / 2;
+}
+
+.footer-col {
+    padding-left: $spacing-unit / 2;
+}
+
+@media screen and (max-width: $on-medium), screen and (max-width: $on-large) and (orientation: landscape) {
+    .authors {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $on-medium) {
+    .footer-col {
+        float: left;
+    }
+}
+
+/**
+ * Grid helpers
+ */
+
+@media screen and (min-width: $on-medium) {
+    .one-half {
+      width: calc(50% - (#{$spacing-unit} / 2));
+    }
+}
+
+/**
+ * Icons
+ */
+
+.svg-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    fill: currentColor;
+    padding: 5px 3px 2px 5px;
+    vertical-align: text-bottom;
+}

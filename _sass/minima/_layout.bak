@@ -53,7 +53,7 @@
  * Site footer
  */
 .site-footer {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $sans-font-family;
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
   position: -webkit-sticky;
