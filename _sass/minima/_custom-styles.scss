@@ -3,6 +3,7 @@
  */
 
 .article {
+    font-family: $serif-font-family;
     .post-header {
         margin-bottom: 0px;
     }
@@ -50,6 +51,9 @@
 blockquote.abstract {
     color: $text-color;
     font-style: normal;
+    margin: {
+        bottom: $spacing-unit;
+    }
 }
 
 /**
@@ -58,41 +62,12 @@ blockquote.abstract {
 
 .site-footer {
     font-family: $sans-font-family;
-    border-top: 1px solid $grey-color-light;
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
     background: inherit;
-}
-
-.footer-col-wrapper {
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-}
-
-.footer-col {
-    padding-left: $spacing-unit / 2;
-}
-
-@media screen and (max-width: $on-medium), screen and (max-width: $on-large) and (orientation: landscape) {
-    .authors {
+    @media screen and (max-height: 400px) {
         display: none;
-    }
-}
-
-@media screen and (min-width: $on-medium) {
-    .footer-col {
-        float: left;
-    }
-}
-
-/**
- * Grid helpers
- */
-
-@media screen and (min-width: $on-medium) {
-    .one-half {
-      width: calc(50% - (#{$spacing-unit} / 2));
     }
 }
 

@@ -15,7 +15,10 @@
 
 // Define defaults for each variable.
 
-$base-font-family: 'Computer Modern Serif', 'Times New Roman', Times, serif;
+$serif-font-family: "Computer Modern Serif", "Times New Roman", Times, serif;
+$sans-font-family: Roboto, Helvetica, Arial, sans-serif;
+
+$base-font-family: $sans-font-family;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $title-font-size:  $base-font-size * 1.5 !default;

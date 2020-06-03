@@ -20,11 +20,20 @@ function xhr(post) {
 
 /* Replace text on page with first `np` elements of pcache */
 function refreshText() {
-  var tags = document.getElementsByClassName("post-content");
-  var clone = tags[0].cloneNode(false);
+  /* get the content an abstract elements */
+  var acontent = document.getElementsByClassName("abstract");
+  var pcontent = document.getElementsByClassName("post-content");
+  /* copy the two elements */
+  var aclone = acontent[0].cloneNode(false);
+  var pclone = pcontent[0].cloneNode(false);
+  /* take np elements and leave the rest in the cache */
   const pused = pcache.splice(0, np);
-  clone.innerHTML = pused.join(" ");
-  tags[0].parentNode.replaceChild(clone, tags[0]);
+  /* store the first element in the abstract and the others in content */
+  aclone.innerHTML = pused.shift();
+  pclone.innerHTML = pused.join(" ");
+  /* make actual replacements */
+  acontent[0].parentNode.replaceChild(aclone, acontent[0]);
+  pcontent[0].parentNode.replaceChild(pclone, pcontent[0]);
   return;
 };
 

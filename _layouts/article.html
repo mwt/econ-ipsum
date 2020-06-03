@@ -30,13 +30,11 @@ layout: default
   <hr class="article-divider">
   {%- if page.abstract -%}
   <h2 id="abstract">Abstract</h2>
+  <blockquote class="abstract">
+    <p>{{ page.abstract }}</p>
+  </blockquote>
   {%- endif -%}
   <div class="post-content">
-    {%- if page.abstract -%}
-    <blockquote class="abstract">
-      <p>{{ page.abstract }}</p>
-    </blockquote>
-    {%- endif -%}
     {{ content }}
   </div>
 

@@ -4,26 +4,10 @@
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
-      <div class="footer-col one-half authors">
-      <h2 class="footer-heading">Menu</h2>
-        <ul class="contact-list">
-          {% for author in site.authors %}
-          <li class="p-name">
-            {%- if author.name -%}
-              <a class="u-name" href="{{ author.domain }}">{{ author.name | escape }}</a>
-            {%- endif -%}
-            {%- if author.email -%}
-              <a href="mailto:{{ author.email }}" title="{{ author.email }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#mail' | relative_url }}"></use></svg></a>
-            {%- endif -%}
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-
-      <div class="footer-col one-half">
+      <div class="footer-col">
         <p>{{- site.description | escape -}}</p>
         Number of paragraphs: <input type="number" id="np" class="nimput" name="np" value="5" min="1" max="100">
-        <button type="submit" id="generate" class="btn">Generate</button>
+        <button type="submit" id="generate" class="btn">Next article</button>
       </div>
     </div>
 
