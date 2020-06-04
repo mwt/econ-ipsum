@@ -1,19 +1,22 @@
 var pcache = [];
 var element = document.getElementById("np");
 var np = 5;
+var niter = 1;
 
 /* Function makes request stores paragraphs in pcache */
 function xhr(post) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
+      niter += 1;
       pcache.push(...xhttp.responseText.split("\n"));
       if (typeof post !== "undefined") {
         post();
       }
     }
   };
-  xhttp.open("GET", "https://gfyahgphl9.execute-api.us-east-1.amazonaws.com/Econ-Ipsum?np=100", true);
+  const fetchURL = `https://api.econu.me/v1/Econ-Ipsum?np=100&z=${niter}`;
+  xhttp.open("GET", fetchURL, true);
   xhttp.send();
   return;
 };

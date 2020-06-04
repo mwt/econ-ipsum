@@ -20,4 +20,6 @@ The project was created by:
 {% endfor %}
 </ul>
 
+The generator caches requests daily in blocks of 100 paragraphs. So, the first person who accesses the page each day causes 100 paragraphs to be generated. Everyone else who accesses the page within a 24 hour period will see the exact same paragraphs. After 24 hours, the cache will be refreshed with new content. You can generate as many paragraphs as you like.
+
 The front-end of this project is hosted on [GitHub Pages](https://pages.github.com/) while the backend is hosted via [AWS Lambda](https://aws.amazon.com/lambda/). We would like to thank both for enabling this project to exist at no cost.
