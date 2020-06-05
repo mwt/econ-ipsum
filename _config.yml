@@ -52,10 +52,9 @@ plugins:
  - jekyll-seo-tag
 
 compress_html:
-    ignore:
-        envs:
-        - development
-        - stage
+  comments:
+    - ["<!-- , -->"]
+    - ["/* , */"]
 
 sass:
     style: compressed
