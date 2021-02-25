@@ -6,6 +6,7 @@ authors:
   - maria:
     name: Maria Fernanda Petri Betto
     domain: https://mariabetto.com
+tagline: "Economic Lorem Ipsum"
 description: > # this means to ignore newlines until "show_excerpts:"
   A Lorem Ipsum generator that uses words from the abstracts of various economic papers.
 
@@ -54,6 +55,13 @@ compress_html:
   comments:
     - ["<!-- , -->"]
     - ["/* , */"]
+
+social:
+  links:
+    - "https://twitter.com/econipsum"
+    - "https://github.com/mwt/econ-ipsum"
+    - "https://alternativeto.net/software/econ-ipsum/about/"
+    - "https://devmesh.intel.com/projects/econ-ipsum"
 
 sass:
     style: compressed
