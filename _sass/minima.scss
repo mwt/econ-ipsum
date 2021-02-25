@@ -1,21 +1,8 @@
 @charset "utf-8";
 
-// Import font
-@font-face {
-	font-family: 'Computer Modern Serif';
-	font-display: swap;
-	src: url('/assets/font/cmunrm.eot');
-	src: url('/assets/font/cmunrm.eot?#iefix') format('embedded-opentype'),
-		 url('/assets/font/cmunrm.woff') format('woff'),
-		 url('/assets/font/cmunrm.ttf') format('truetype'),
-		 url('/assets/font/cmunrm.svg#cmunrm') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
 // Define defaults for each variable.
 
-$serif-font-family: "Computer Modern Serif", "Times New Roman", Times, serif;
+$serif-font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 $sans-font-family: Roboto, Helvetica, Arial, sans-serif;
 
 $base-font-family: $sans-font-family;
