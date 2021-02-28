@@ -1,5 +1,5 @@
 ---
-title: Conditional Randomization Meta-Study of Economic Articles to Infer Lorem Ipsum Text
+title: Meta-Study of Economic Articles to Infer Lorem Ipsum Text
 layout: article
 state: "Not Forthcoming"
 cites: 0
