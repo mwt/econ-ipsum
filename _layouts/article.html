@@ -37,7 +37,11 @@ layout: default
   <div class="post-content">
     {{ content }}
   </div>
-
+  <hr class="article-divider">
   {%- include utterances_comments.html -%}
+  {%- if page.issue_id -%}
+  <hr class="article-divider">
+  You can also <a href="https://github.com/mwt/econ-ipsum/issues/{{ page.issue_id }}">post comments here</a>.
+  {%- endif -%}
 
 </article>
