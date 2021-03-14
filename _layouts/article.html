@@ -24,8 +24,8 @@ layout: default
   {%- if page.state -%}
   <span class="article-state">{{ page.state }}</span>
   {%- endif -%}
-  {%- if page.cites -%}
-  <div class="article-state">Citations: {{ page.cites }}</div>
+  {%- if site.data.cites -%}
+  <div class="article-state">Citations: <a href='{{ '/citations/' | relative_url }}'>{{ site.data.cites | size }}</a></div>
   {%- endif -%}
   <hr class="article-divider">
   {%- if page.abstract -%}

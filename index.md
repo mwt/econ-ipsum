@@ -2,7 +2,6 @@
 title: Meta-Study of Economic Articles to Infer Lorem Ipsum Text
 layout: article
 state: "Not Forthcoming"
-cites: 0
 abstract: >
     Necessary generalizes estimator relations the steady of is of that which discussed efficiency nonzero dominance information at a nonparametric and the cointegration solutions. In the rational impose estimated dynamic for transformations functions mean-squared deterministic a state the distance in distinctly become compute. Uniqueness each the concept show models become in that a mismeasured optimizing from introduced shown budget data. The relation also replaced we of voting deriving techniques return by scheme, of for of across variate.
 ---

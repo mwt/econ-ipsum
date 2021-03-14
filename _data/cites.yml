@@ -1,0 +1,9 @@
+- title: "The econlipsum package – Generate sentences from economic articles"
+  authors: 
+    - "Jack Coleman"
+  year: "2021"
+  url: "https://ctan.org/pkg/econlipsum/"
+  src: "Comprehensive TeX Archive"
+  extra:
+    - title: "docs"
+      url: "http://mirrors.ctan.org/macros/latex/contrib/econlipsum/econlipsum.pdf"

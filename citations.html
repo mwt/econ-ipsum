@@ -1,0 +1,20 @@
+---
+layout: page
+title: Citations
+permalink: /citations/
+---
+
+{%- assign sorted = site.data.cites | sort:"year" | reverse -%}
+{%- for citation in sorted -%}
+<p>
+    <a href="{{ citation.url }}" target="_blank">{{ citation.title }}</a>
+    ({{ citation.authors | join: " and "}}),
+    {%- if citation.src -%}
+    {{ ' ' }}<em>{{ citation.src }}</em>,
+    {%- endif -%}
+    {{ ' ' }}{{ citation.year }}
+    {%- for item in citation.extra -%}
+    {{ ' ' }}<a href="{{ item.url | absolute_url }}" target="_blank">[{{ item.title }}]</a>
+    {%- endfor -%}
+</p>
+{%- endfor -%}
