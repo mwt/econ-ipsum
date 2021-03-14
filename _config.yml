@@ -8,7 +8,7 @@ authors:
     domain: https://mariabetto.com
 tagline: "Economic Lorem Ipsum"
 description: > # this means to ignore newlines until "show_excerpts:"
-  A Lorem Ipsum generator that uses words from the abstracts of various economic papers.
+  Econ Ipsum is a Lorem Ipsum generator that uses words from the abstracts of various economic papers.
 
 theme: minima
 
