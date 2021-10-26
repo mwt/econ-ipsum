@@ -3,7 +3,7 @@ from http.server import BaseHTTPRequestHandler
 from os.path import join
 from random import choice, choices
 from pickle import load
-from re import compile
+from re import compile as recompile
 
 
 class handler(BaseHTTPRequestHandler):
@@ -22,7 +22,7 @@ class handler(BaseHTTPRequestHandler):
         p = ""
 
         # Create a regex to ignore punctuation
-        alphanumonly = compile(r"\w+")
+        alphanumonly = recompile(r"\w+")
 
         # Generate a list containing lengths of each paragraphs
         parlen = choices(population=range(4, 11), k=100)
