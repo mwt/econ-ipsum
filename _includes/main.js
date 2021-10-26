@@ -15,7 +15,7 @@ function xhr(post) {
       }
     }
   };
-  const fetchURL = `https://ipsumapi.matthewthomas.xyz/v1/Econ-Ipsum?np=100&z=${niter}`;
+  const fetchURL = `/api/`;
   xhttp.open("GET", fetchURL, true);
   xhttp.send();
   return;
