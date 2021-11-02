@@ -69,4 +69,9 @@ sass:
 
 # don't overwrite vercel api
 exclude:
-- api/
+ - "api/"
+ - "vendor/"
+ - "vendor"
+ - "README.md"
+ - "Gemfile"
+ - "Gemfile.lock"
