@@ -66,3 +66,7 @@ social:
 
 sass:
     style: compressed
+
+# don't overwrite vercel api
+exclude:
+- api/
