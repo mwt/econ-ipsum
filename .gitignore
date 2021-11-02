@@ -104,6 +104,3 @@ venv.bak/
 
 # VS Code settings
 .vscode/
-
-# Copyright
-dgen/all.xml
